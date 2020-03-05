@@ -1,38 +1,38 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+}
+.issue {
+  /* border: 1px solid #d1d5da; */
+  max-width: 600px;
+  margin-bottom: 10px;
+  background-color: #FFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.issue-header {
+  background: #f8f9fa;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: dimgrey;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.issue-header:hover {
+  color: green;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.issue-body {
+  padding: 20px;
+  font-size: 14px;;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
